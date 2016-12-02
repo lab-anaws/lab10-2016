@@ -1,0 +1,80 @@
+Dec 02 08:25:46.229 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Dec 02 08:25:46.229 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59402.
+Dec 02 08:25:46.244 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 02 08:25:46.246 HYPERVISOR: exec_cmd: hypervisor working_dir /home/user/lab7-2015/mpls_topology/project-files/dynamips 
+Dec 02 08:25:46.246 GENERAL: working_dir=/home/user/lab7-2015/mpls_topology/project-files/dynamips
+Dec 02 08:25:46.248 HYPERVISOR: exec_cmd: vm create R5 5 c3600 
+Dec 02 08:25:46.248 VM: VM R5 created.
+Dec 02 08:25:46.250 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5004 
+Dec 02 08:25:46.251 HYPERVISOR: exec_cmd: c3600 get_mac_addr R5 
+Dec 02 08:25:46.253 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 02 08:25:46.255 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 NM-1FE-TX 
+Dec 02 08:25:46.321 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+Dec 02 08:25:46.400 HYPERVISOR: exec_cmd: vm set_ram R5 192 
+Dec 02 08:25:46.431 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 02 08:25:46.442 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 NM-1FE-TX 
+Dec 02 08:25:46.447 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5004 
+Dec 02 08:25:46.448 HYPERVISOR: exec_cmd: vm set_ios R5 /home/user/GNS3/images/IOS/c3640-a3js-mz.124-23.image 
+Dec 02 08:25:46.448 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 02 08:25:46.449 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x605b90e0 
+Dec 02 08:25:46.449 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 02 08:25:46.449 HYPERVISOR: exec_cmd: vm slot_add_binding R5 2 0 NM-4E 
+Dec 02 08:25:46.450 HYPERVISOR: exec_cmd: c3600 set_mac_addr R5 cc05.0ba2.0000 
+Dec 02 08:25:46.450 HYPERVISOR: exec_cmd: vm set_config R5 configs/i5_startup-config.cfg 
+Dec 02 08:25:46.711 HYPERVISOR: exec_cmd: nio create_tap tap-48d620e7-0b35-4c97-8e91-5a54a50e4686 tap1 
+Dec 02 08:25:46.713 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 2 2 tap-48d620e7-0b35-4c97-8e91-5a54a50e4686 
+Dec 02 08:25:46.713 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 02 08:25:46.770 HYPERVISOR: exec_cmd: nio create_udp udp-536e03ac-d2ff-4ee0-a65b-cd26ffdec4d7 10013 127.0.0.1 10010 
+Dec 02 08:25:46.773 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 1 0 udp-536e03ac-d2ff-4ee0-a65b-cd26ffdec4d7 
+Dec 02 08:25:46.774 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 02 08:25:46.791 HYPERVISOR: exec_cmd: nio create_udp udp-9299dcf1-25ea-4013-ae84-5b097176286d 10015 127.0.0.1 10012 
+Dec 02 08:25:46.798 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 2 1 udp-9299dcf1-25ea-4013-ae84-5b097176286d 
+Dec 02 08:25:46.799 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 02 08:25:46.810 HYPERVISOR: exec_cmd: nio create_udp udp-c0c3b260-ff58-46bf-bfee-f5a39a340751 10011 127.0.0.1 10016 
+Dec 02 08:25:46.810 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 2 0 udp-c0c3b260-ff58-46bf-bfee-f5a39a340751 
+Dec 02 08:25:46.811 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 02 08:25:46.837 HYPERVISOR: exec_cmd: nio create_udp udp-2c5cad21-b5dd-4621-8a6a-b1768342d5ce 10017 127.0.0.1 10014 
+Dec 02 08:25:46.837 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-2c5cad21-b5dd-4621-8a6a-b1768342d5ce 
+Dec 02 08:25:46.838 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 02 08:26:25.699 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 02 08:26:25.701 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R5 2 0 
+Dec 02 08:26:25.704 HYPERVISOR: exec_cmd: nio delete udp-c0c3b260-ff58-46bf-bfee-f5a39a340751 
+Dec 02 08:26:31.466 HYPERVISOR: exec_cmd: nio create_udp udp-130fdb02-16d3-4be4-a48b-ae7a9d67f36e 10011 127.0.0.1 10016 
+Dec 02 08:26:31.467 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 2 0 udp-130fdb02-16d3-4be4-a48b-ae7a9d67f36e 
+Dec 02 08:26:31.467 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 02 08:26:39.567 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 02 08:26:39.567 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R5 2 1 
+Dec 02 08:26:39.568 HYPERVISOR: exec_cmd: nio delete udp-9299dcf1-25ea-4013-ae84-5b097176286d 
+Dec 02 08:26:46.602 HYPERVISOR: exec_cmd: nio create_udp udp-86a9e116-f1d2-40db-b0de-803ed540fdbf 10012 127.0.0.1 10015 
+Dec 02 08:26:46.603 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 2 1 udp-86a9e116-f1d2-40db-b0de-803ed540fdbf 
+Dec 02 08:26:46.603 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 02 08:26:52.250 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Dec 02 08:26:52.250 VM: VM Ghost created.
+Dec 02 08:26:52.256 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/user/GNS3/images/IOS/c3640-a3js-mz.124-23.image 
+Dec 02 08:26:52.256 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Dec 02 08:26:52.258 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3640-a3js-mz.124-23.image-192.ghost 
+Dec 02 08:26:52.258 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Dec 02 08:26:52.259 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Dec 02 08:26:52.276 HYPERVISOR: exec_cmd: vm start Ghost 
+Dec 02 08:26:55.745 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Dec 02 08:26:55.746 HYPERVISOR: exec_cmd: vm stop Ghost 
+Dec 02 08:26:55.993 VM: VM Ghost shutdown.
+Dec 02 08:26:55.995 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Dec 02 08:26:55.995 VM: VM Ghost destroyed.
+Dec 02 08:26:55.996 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Dec 02 08:26:55.996 HYPERVISOR: exec_cmd: vm set_ghost_file R5 c3640-a3js-mz.124-23.image-192.ghost 
+Dec 02 08:26:55.997 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 02 08:26:55.998 HYPERVISOR: exec_cmd: vm start R5 
+Dec 02 08:33:49.855 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 02 08:33:49.874 HYPERVISOR: exec_cmd: vm stop R5 
+Dec 02 08:33:50.242 VM: VM R5 shutdown.
+Dec 02 08:33:50.245 HYPERVISOR: exec_cmd: vm extract_config R5 
+Dec 02 08:33:54.612 HYPERVISOR: exec_cmd: vm extract_config R5 
+Dec 02 08:33:58.236 HYPERVISOR: exec_cmd: vm extract_config R5 
+Dec 02 08:33:59.905 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 02 08:33:59.913 HYPERVISOR: exec_cmd: vm extract_config R5 
+Dec 02 08:33:59.921 HYPERVISOR: exec_cmd: vm delete R5 
+Dec 02 08:33:59.921 VM: VM R5 destroyed.
+Dec 02 08:33:59.924 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 02 08:34:00.325 HYPERVISOR: Stopped.
+Dec 02 08:34:00.330 GENERAL: reset done.
